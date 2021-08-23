@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+* {
+	margin: 5px;
+	padding: 5px;
+}
+
+#map {
+	border: 2px solid blue;
+	width: 400px;
+	height: 400px;
+}
+</style>
+
+<script type="text/javascript"
+	src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f3c8dbd91a0e2049431de4095dcc1a54"></script>
+</head>
+<body>
+
+	<div id="map"></div>
+	<button id="btn1">지도 변경1</button>
+	<button id="btn2">지도 변경2</button>
+	<button id="btn3">지도 변경3</button>
+
+
+	<script type="text/javascript">
+		var container = document.getElementById('map');
+		var options = {
+			center : new kakao.maps.LatLng(33.450701, 126.570667),
+			level : 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+	</script>
+
+
+
+
+</body>
+</html>
